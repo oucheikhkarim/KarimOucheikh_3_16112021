@@ -1,0 +1,238 @@
+* {
+  font-family: "roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+}
+
+#block-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+.search-bar {
+  background-color: #e3e3e3;
+  height: 50px;
+  border-top: 3px solid #d2d5d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar input {
+  background-color: #e3e3e3;
+  width: 160px;
+  font-size: 1.2rem;
+  margin-left: 15px;
+  border: 0;
+}
+.search-bar input::placeholder {
+  color: black;
+}
+
+#exploration {
+  background-color: #efefef;
+  padding: 40px 0 60px;
+}
+#exploration h1 {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+#exploration p {
+  width: 90%;
+  margin: 15px auto 30px;
+  text-align: center;
+  color: grey;
+  font-size: 1.2rem;
+}
+#exploration .btn {
+  width: 50%;
+  margin: auto;
+  background-color: #9356DC;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  width: 220px;
+  border-radius: 25px;
+  box-shadow: 0px 5px 10px #a9a3a3;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+}
+nav h2 {
+  margin: 40px 0 20px;
+}
+nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+nav .fonctionnement-blocks {
+  display: flex;
+  align-items: center;
+  width: 320px;
+  height: 70px;
+  line-height: 70px;
+  margin: 0 auto 25px;
+  background-color: #efefef;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px #a9a3a3;
+}
+nav .fonctionnement-blocks__numbers {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #9356DC;
+  color: #fff;
+  position: relative;
+  left: -10px;
+}
+nav .fonctionnement-blocks__icones {
+  margin: 0 25px 0 10px;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+section {
+  background-color: #f4f1f1;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section h2 {
+  width: 90%;
+  margin: 40px auto 20px;
+}
+section .restaurants {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+section .restaurants a {
+  color: black;
+  text-decoration: none;
+  margin: 0 auto 28px;
+}
+section .restaurants__block {
+  width: 320px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px #a9a3a3;
+}
+section .restaurants__block__images {
+  height: 160px;
+  background-image: url("/Maquettes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: 15px 15px 0 0;
+}
+section .restaurants__block__images--img2 {
+  background-image: url("/Maquettes-Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-position: 0 -147px;
+}
+section .restaurants__block__images--img3 {
+  background-image: url("/Maquettes-Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-position: bottom;
+}
+section .restaurants__block__images--img4 {
+  background-image: url("/Maquettes-Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-position: bottom;
+}
+section .restaurants__block p {
+  height: 25px;
+  width: 80px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px 2px 2px 2px;
+  position: relative;
+  left: 225px;
+  background-color: #99E2D0;
+  color: #239168;
+}
+section .restaurants__block__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .restaurants__block__details__names {
+  margin-left: 10px;
+}
+section .restaurants__block__details h3 {
+  margin: 10px 0 5px 0;
+}
+section .restaurants__block__details h4 {
+  margin: 0;
+  font-weight: normal;
+}
+section .restaurants__block__details__icones {
+  margin-right: 20px;
+  font-size: 1.5rem;
+}
+section .restaurants__block__details__icones .fas {
+  display: none;
+}
+section .restaurants__block__details__icones:hover {
+  color: #9356DC;
+}
+section .restaurants__block__details__icones:hover .fas {
+  display: block;
+}
+section .restaurants__block__details__icones:hover .far {
+  display: none;
+}
+
+footer {
+  background-color: #2a2929;
+  padding-left: 28px;
+}
+footer h3 {
+  font-family: "Shrikhand", sans-serif;
+  color: #fff;
+}
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+footer ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  width: 230px;
+}
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer ul li a i {
+  margin-right: 10px;
+  width: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

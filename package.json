@@ -1,0 +1,22 @@
+{
+  "name": "karimoucheikh_3_16112021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oucheikhkarim/KarimOucheikh_3_16112021.git"
+  },
+  "keywords": [
+    "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"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oucheikhkarim/KarimOucheikh_3_16112021/issues"
+  },
+  "homepage": "https://github.com/oucheikhkarim/KarimOucheikh_3_16112021#readme"
+}
