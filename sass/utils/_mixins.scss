@@ -1,0 +1,8 @@
+@mixin image($bg){
+    @each $img, $prp in $bg{
+        &--#{$img}{
+            background-image: map-get($prp, url);
+            background-position: map-get($prp, position);
+        }  
+    }
+}
