@@ -281,10 +281,7 @@ header i{
                 color: $color-primary;
                 .fas{
                     display: block;
-                    text-transform: uppercase;
-                    background: linear-gradient($color-primary 0, $color-secondary 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    text-overflow: ellipsis;
                 }
                 .far{
                     display: none;
@@ -296,14 +293,15 @@ header i{
         margin: auto;
         h3{
             font-weight: normal;
-            margin-left: 5px;
-            hr{
-                color: $color-tertiary;
-                border: 2px solid;
-                width: 50px;
-                margin-left: 0;
+            margin: 0 0 5px 5px;
             }
-        }
+        .green_line{
+            color: $color-tertiary;
+            border: 2px solid;
+            width: 50px;
+            margin-left: 5px;
+            margin-bottom: 15px;
+            }
         &__choix{
             background-color: white;
             border-radius: 20px;
@@ -360,7 +358,7 @@ header i{
                 display: none;
             }
         }
-    } 
+    }
 }
 .container{
     background-color: #f2f2f2;

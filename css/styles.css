@@ -292,10 +292,7 @@ header i {
 }
 .menu__title__icone:hover .fas {
   display: block;
-  text-transform: uppercase;
-  background: linear-gradient(#9356DC 0, #FF79DA 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  text-overflow: ellipsis;
 }
 .menu__title__icone:hover .far {
   display: none;
@@ -305,13 +302,14 @@ header i {
 }
 .menu__blocks h3 {
   font-weight: normal;
-  margin-left: 5px;
+  margin: 0 0 5px 5px;
 }
-.menu__blocks h3 hr {
+.menu__blocks .green_line {
   color: #99E2D0;
   border: 2px solid;
   width: 50px;
-  margin-left: 0;
+  margin-left: 5px;
+  margin-bottom: 15px;
 }
 .menu__blocks__choix {
   background-color: white;
