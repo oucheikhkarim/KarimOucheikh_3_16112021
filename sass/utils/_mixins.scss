@@ -1,8 +1,33 @@
-@mixin image($bg){
-    @each $img, $prp in $bg{
-        &--#{$img}{
-            background-image: map-get($prp, url);
-            background-position: map-get($prp, position);
-        }  
+@mixin heart{
+    font-size: 1.5rem;
+    cursor: pointer;
+    .fas{
+        color: transparent;
+        background:linear-gradient(350deg, $color-primary 0%, $color-secondary 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        transition: all 200ms ease-in-out;
+        position: relative;
+        left: 30px;
+        opacity: 0;
     }
+    &:hover .fas{
+        opacity: 1;
+    }
+}
+@mixin btn {
+    background: linear-gradient(350deg, $color-primary 0%, $color-secondary 100%);
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px #a9a3a3;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.02);
+        opacity: 0.9;
+    }
+    
 }

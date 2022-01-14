@@ -6,25 +6,3 @@ body{
     display: flex;
     flex-direction: column;
 }
-.loader{
-    position: fixed;
-    background-color: #ffffff;
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    inset: 0;
-    z-index: 1;
-    opacity: 0,1;
-    animation: disappear 200ms $animation-duration * $animation-count forwards;
-    transform-origin: top;
-    &::after{
-        content: "";
-        height: 100px;
-        width: 100px;
-        border-right: 5px solid transparent;
-        border-top: 5px solid $color-primary;
-        border-radius: 50%;
-        animation: spiner $animation-duration ease-in-out;
-        animation-iteration-count: $animation-count;
-    }
-}
