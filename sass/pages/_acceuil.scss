@@ -1,0 +1,160 @@
+.search-bar{
+    background-color: #e3e3e3;
+    height: 50px;
+    border-top:3px solid rgb(210, 213, 210);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input{
+        background-color: #e3e3e3;
+        width: 160px;
+        font-size: 1.2rem;
+        margin-left: 15px;
+        border: 0;
+        &::placeholder{
+            color: black;
+        }
+    }
+}
+.exploration{
+    background-color: rgb(239, 239, 239);
+    padding: 40px 0 60px;
+    h1{
+        width: 75%;
+        margin: auto;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    p{
+        width: 90%;
+        margin: 15px auto 30px;
+        text-align: center;
+        color: grey;
+        font-size: 1.2rem;
+    }
+}
+nav{
+    width: 90%;
+    margin: auto;
+   h2{
+        margin: 40px 0 20px;
+    }
+    ul{
+        padding:0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+    .fonctionnement-blocks{
+        display: flex;
+        align-items: center;
+        width: 320px;
+        height: 70px;
+        line-height: 70px;
+        margin:0 auto 25px;
+        background-color:rgb(239, 239, 239);
+        border-radius: 20px;
+        box-shadow: 0px 5px 10px #a9a3a3;
+        &:hover{
+            background-color: rgb(239, 229, 241);
+            i{
+                color:$color-primary;
+            }
+        }
+        &__numbers{
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            background-color: $color-primary;
+            color: #fff;
+            position: relative;
+            left: -10px;
+        }
+        &__icones{
+            margin: 0 25px 0 10px;
+            font-size: 1.2rem;
+            color: grey;
+        }
+    }
+} 
+section{
+    background-color: #f4f1f1;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    h2{
+        width: 90%;
+        margin: 40px auto 20px;
+    }
+    .restaurants{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        a{
+            color: black;
+            text-decoration: none;
+            margin:0 auto 28px;
+        }
+        &__block{
+            width: 320px;
+            height: 230px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 5px 10px #a9a3a3;
+            &__images{
+                height: 160px;
+                img{
+                    height:160px;
+                    border-radius: 15px 15px 0 0;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: bottom;
+                }
+                &--position{
+                    img{
+                        object-position: 0 -145px;
+                    }
+                }
+                p{
+                    height: 25px;
+                    width: 80px;
+                    font-size: 0.9rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 2px 2px 2px 2px;
+                    position:relative;
+                    left: 225px;
+                    top: -165px;
+                    background-color: $color-tertiary;
+                    color: rgb(35, 145, 104);
+                }
+            }
+            &__details{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &__names{
+                    margin-left: 10px;
+                }
+                h3{
+                    margin: 10px 0 5px 0;
+                }
+                h4{
+                    margin: 0;
+                    font-weight: normal;
+                }
+                &__icones{
+                    margin-right: 20px;
+                    @include heart;
+                }
+            }
+        }
+    }
+}

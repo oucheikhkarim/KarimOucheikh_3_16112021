@@ -1,0 +1,17 @@
+header{
+    width: 100%;
+    i{
+        font-size: 1.7rem;
+        color: black;
+    }
+    .block-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        &__arrow{
+            position: relative;
+            right:20%;
+        }
+    }
+}

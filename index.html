@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="loader">
+    </div>
      <header>
-        <div id="block-logo">
+        <div class="block-logo">
             <img src="Maquettes-Ohmyfood/images/logo/ohmyfood@2x.svg" alt="logo">
         </div>
      </header>
@@ -21,10 +23,10 @@
             <label for="localisation"><i class="fas fa-map-marker-alt"></i></label>
             <input type="text" name="localisation" id="localisation" placeholder="Paris, Belleville"/>
         </div>
-        <div id="exploration">
+        <div class="exploration">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
-            <div class="btn">Explorez nos restaurants</div>
+            <div class="exploration__btn">Explorez nos restaurants</div>
         </div>
         <nav>
             <h2>Fonctionnement</h2>
@@ -32,7 +34,8 @@
                 <li class="fonctionnement-blocks">
                     <div class="fonctionnement-blocks__numbers">1
                     </div>
-                    <div class="fonctionnement-blocks__icones"><i class="fas fa-mobile-alt"></i>
+                    <div class="fonctionnement-blocks__icones">
+                        <i class="fas fa-mobile-alt"></i>
                     </div>
                     <div class="fonctionnement-blocks__titles">Choisissez un restaurant
                     </div>
@@ -40,7 +43,8 @@
                 <li class="fonctionnement-blocks">
                     <div class="fonctionnement-blocks__numbers">2
                     </div>
-                    <div class="fonctionnement-blocks__icones"><i class="fas fa-list-ul"></i>
+                    <div class="fonctionnement-blocks__icones">
+                        <i class="fas fa-list-ul"></i>
                     </div>
                     <div class="fonctionnement-blocks__titles">Composez votre menu
                     </div>
@@ -48,7 +52,8 @@
                 <li class="fonctionnement-blocks">
                     <div class="fonctionnement-blocks__numbers">3
                     </div>
-                    <div class="fonctionnement-blocks__icones"><i class="fas fa-store"></i>
+                    <div class="fonctionnement-blocks__icones">
+                        <i class="fas fa-store"></i>
                     </div>
                     <div class="fonctionnement-blocks__titles">Dégustez au restaurant
                     </div>
@@ -58,9 +63,10 @@
         <section>
             <h2>Restaurants</h2>
             <div class="restaurants">
-                <a href="#">
+                <a href="la_palette_du_gout.html">
                     <div class="restaurants__block">
                         <div class="restaurants__block__images">
+                            <img src="Maquettes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image restaurant jay wennington">
                             <p>Nouveau</p>
                         </div>
                         <div class="restaurants__block__details">
@@ -68,14 +74,17 @@
                                 <h3>La palette du goût</h3>
                                 <h4>Ménilmontant</h4>
                             </div>
-                            <div class="restaurants__block__details__icones"><i class="far fa-heart"></i><i class="fas fa-heart"></i>
+                            <div class="restaurants__block__details__icones">
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
                             </div>
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="la_note_enchantee.html">
                     <div class="restaurants__block">
-                        <div class="restaurants__block__images restaurants__block__images--img2">
+                        <div class="restaurants__block__images restaurants__block__images--position">
+                            <img src="Maquettes-Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="image restaurant stil">
                             <p>Nouveau</p>
                         </div>
                         <div class="restaurants__block__details">
@@ -83,35 +92,41 @@
                                 <h3>La note enchantée</h3>
                                 <h4>Charonne</h4>
                             </div>
-                            <div class="restaurants__block__details__icones"><i class="far fa-heart"></i><i class="fas fa-heart"></i>
+                            <div class="restaurants__block__details__icones">
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
                             </div>
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="a_la_francaise.html">
                     <div class="restaurants__block">
-                        <div class="restaurants__block__images restaurants__block__images--img3">
+                        <div class="restaurants__block__images"><img src="Maquettes-Ohmyfood/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="image restaurant toa heftiba">
                         </div>
                         <div class="restaurants__block__details">
                             <div class="restaurants__block__details__names">
                                 <h3>À la française</h3>
                                 <h4>Cité Rouge</h4>
                             </div>
-                            <div class="restaurants__block__details__icones"><i class="far fa-heart"></i><i class="fas fa-heart"></i>
+                            <div class="restaurants__block__details__icones">
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
                             </div>
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="le_delice_des_sens.html">
                     <div class="restaurants__block">
-                        <div class="restaurants__block__images restaurants__block__images--img4">
+                        <div class="restaurants__block__images"><img src="Maquettes-Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image restaurant louis hansel">
                         </div>
                         <div class="restaurants__block__details">
                             <div class="restaurants__block__details__names">
                                 <h3>Le délice des sens</h3>
                                 <h4>Folie-Méricourt</h4>
                             </div>
-                            <div class="restaurants__block__details__icones"><i class="far fa-heart"></i><i class="fas fa-heart"></i>
+                            <div class="restaurants__block__details__icones">
+                                <i class="fas fa-heart"></i>
+                                <i class="far fa-heart"></i>
                             </div>
                         </div>
                     </div>
