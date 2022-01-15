@@ -32,6 +32,13 @@
     }
     &__blocks{
         margin: auto;
+        animation: show 1s;
+        animation-fill-mode: both;
+        @for $i from 2 through 4{
+            &:nth-child(#{$i}){
+                animation-delay: 0.2s * $i;
+            }
+        }
         h3{
             font-weight: normal;
             margin: 0 0 5px 5px;
